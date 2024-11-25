@@ -11,7 +11,7 @@ class CounterPage extends StatelessWidget {
     final counterCubit = context.read<CounterCubit>();
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Counter App with BLoC'),
+        title: const Text('Counter App with Cubit'),
         centerTitle: true,
       ),
       body: Center(
