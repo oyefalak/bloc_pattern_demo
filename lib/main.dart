@@ -13,12 +13,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Counter App with BLoC',
-      home: BlocProvider(
-        create: (_) => CounterCubit(),
-        child: const CounterPage(),
+    return BlocProvider(
+      create: (_) => CounterCubit(),
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Counter App with BLoC',
+        home: CounterPage(),
       ),
     );
   }

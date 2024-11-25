@@ -14,15 +14,15 @@ class CounterPage extends StatelessWidget {
         title: const Text('Counter App with BLoC'),
         centerTitle: true,
       ),
-      body: BlocBuilder<CounterCubit, CounterState>(
-        builder: (context, state) {
-          return Center(
-            child: Text(
+      body: Center(
+        child: BlocBuilder<CounterCubit, CounterState>(
+          builder: (context, state) {
+            return Text(
               '${state.counter}',
               style: const TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
-            ),
-          );
-        },
+            );
+          },
+        ),
       ),
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
