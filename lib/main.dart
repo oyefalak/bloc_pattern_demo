@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       create: (_) => CounterCubit(),
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Counter App with BLoC',
+        title: 'Counter App with Cubit',
         home: CounterPage(),
       ),
     );
